@@ -1,0 +1,49 @@
+{
+  "name": "@bigjs/date",
+  "version": "1.0.0",
+  "description": "javascript date small",
+  "main": "es/index.js",
+  "scripts": {
+    "test": "mocha --require babel-register"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Mr-jiangzhiguo/@bigjs/date.git"
+  },
+  "keywords": [
+    "data",
+    "js",
+    "format",
+    "transform"
+  ],
+  "author": "jiangzhiguo2010",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Mr-jiangzhiguo/@bigjs/date/issues"
+  },
+  "homepage": "https://github.com/Mr-jiangzhiguo/@bigjs/date#readme",
+  "devDependencies": {
+    "babel": "^6.23.0",
+    "babel-preset-env": "^1.7.0",
+    "babel-register": "^6.26.0",
+    "mocha": "^6.2.0",
+    "eslint": "^5.16.0",
+    "eslint-config-prettier": "^4.3.0",
+    "eslint-plugin-prettier": "^3.1.0",
+    "husky": "^2.4.1",
+    "lint-staged": "^8.2.0",
+    "prettier": "^1.18.2"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged",
+      "commit-msg": "node .github/verifyCommitMsg"
+    }
+  },
+  "lint-staged": {
+    "*.{js,css,json,md}": [
+      "prettier --write",
+      "git add"
+    ]
+  }
+}
