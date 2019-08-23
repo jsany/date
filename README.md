@@ -1,31 +1,31 @@
-<h1 align="center">Welcome to @bigjs/date 👋</h1>
+<h1 align="center">Welcome to @jsany/date 👋</h1>
 <p>
-  <img alt="Version" src="https://img.shields.io/npm/v/@bigjs/date.svg">
-  <a href="https://github.com/Mr-jiangzhiguo/@bigjs/date#readme">
+  <img alt="Version" src="https://img.shields.io/npm/v/@jsany/date.svg">
+  <a href="https://github.com/Mr-jiangzhiguo/@jsany/date#readme">
     <img alt="Documentation" src="https://img.shields.io/badge/documentation-yes-brightgreen.svg" target="_blank" />
   </a>
-  <a href="https://github.com/Mr-jiangzhiguo/@bigjs/date/graphs/commit-activity">
+  <a href="https://github.com/Mr-jiangzhiguo/@jsany/date/graphs/commit-activity">
     <img alt="Maintenance" src="https://img.shields.io/badge/Maintained%3F-yes-green.svg" target="_blank" />
   </a>
-  <a href="https://github.com/Mr-jiangzhiguo/@bigjs/date/blob/master/LICENSE">
+  <a href="https://github.com/Mr-jiangzhiguo/@jsany/date/blob/master/LICENSE">
     <img alt="License: ISC" src="https://img.shields.io/badge/License-ISC-yellow.svg" target="_blank" />
   </a>
 </p>
 
 > javascript date small
 
-### 🏠 [Homepage](https://github.com/Mr-jiangzhiguo/@bigjs/date#readme)
+### 🏠 [Homepage](https://github.com/Mr-jiangzhiguo/@jsany/date#readme)
 
 ## 🚀 Install
 
 ```sh
-npm install --save-dev @bigjs/date
+npm install --save-dev @jsany/date
 ```
 
 ## Usage
 
 ```javascript
-import {dateFormat,UTCTimestamp,UTC2Target,Target2UTC} from '@bigjs/date';
+import {dateFormat,UTCTimestamp,UTC2Target,Target2UTC} from '@jsany/date';
 
 const dateStr = '2019-01-02 14:08:59';
 const bj = '2019-01-01 08:00:00';
@@ -113,7 +113,7 @@ npm run test
 
 ## 🤝 Contributing
 
-Contributions, issues and feature requests are welcome!<br />Feel free to check [issues page](https://github.com/Mr-jiangzhiguo/@bigjs/date/issues).
+Contributions, issues and feature requests are welcome!<br />Feel free to check [issues page](https://github.com/Mr-jiangzhiguo/@jsany/date/issues).
 
 ## Show your support
 
@@ -122,7 +122,7 @@ Give a ⭐️ if this project helped you!
 ## 📝 License
 
 Copyright © 2019 [jzg](https://github.com/Mr-jiangzhiguo).<br />
-This project is [ISC](https://github.com/Mr-jiangzhiguo/@bigjs/date/blob/master/LICENSE) licensed.
+This project is [ISC](https://github.com/Mr-jiangzhiguo/@jsany/date/blob/master/LICENSE) licensed.
 
 ***
 _This README was generated with ❤️ by [readme-md-generator](https://github.com/kefranabg/readme-md-generator)_

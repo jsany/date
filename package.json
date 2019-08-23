@@ -1,5 +1,5 @@
 {
-  "name": "@bigjs/date",
+  "name": "@jsany/date",
   "version": "1.0.0",
   "description": "javascript date small",
   "main": "es/index.js",
@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Mr-jiangzhiguo/@bigjs/date.git"
+    "url": "git+https://github.com/Mr-jiangzhiguo/@jsany/date.git"
   },
   "keywords": [
     "data",
@@ -19,9 +19,9 @@
   "author": "jiangzhiguo2010",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/Mr-jiangzhiguo/@bigjs/date/issues"
+    "url": "https://github.com/Mr-jiangzhiguo/@jsany/date/issues"
   },
-  "homepage": "https://github.com/Mr-jiangzhiguo/@bigjs/date#readme",
+  "homepage": "https://github.com/Mr-jiangzhiguo/@jsany/date#readme",
   "devDependencies": {
     "babel": "^6.23.0",
     "babel-preset-env": "^1.7.0",
