@@ -45,5 +45,9 @@
       "prettier --write",
       "git add"
     ]
-  }
+  },
+  "directories": {
+    "test": "test"
+  },
+  "dependencies": {}
 }
