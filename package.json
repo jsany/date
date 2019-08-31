@@ -1,6 +1,6 @@
 {
   "name": "@jsany/date",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "javascript date small",
   "main": "es/index.js",
   "scripts": {
@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Mr-jiangzhiguo/@jsany/date.git"
+    "url": "https://github.com/jsany/date.git"
   },
   "keywords": [
     "data",
@@ -19,9 +19,9 @@
   "author": "jiangzhiguo2010",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/Mr-jiangzhiguo/@jsany/date/issues"
+    "url": "https://github.com/jsany/date/issues"
   },
-  "homepage": "https://github.com/Mr-jiangzhiguo/@jsany/date#readme",
+  "homepage": "https://github.com/jsany/date",
   "devDependencies": {
     "babel": "^6.23.0",
     "babel-preset-env": "^1.7.0",
