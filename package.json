@@ -1,10 +1,12 @@
 {
   "name": "@jsany/date",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "javascript date small",
-  "main": "es/index.js",
+  "main": "lib/index.js",
+  "module": "es/index.js",
   "scripts": {
-    "test": "mocha --require babel-register"
+    "test": "mocha --require @babel/register",
+    "compile": "babel es --out-dir lib"
   },
   "repository": {
     "type": "git",
@@ -17,15 +19,16 @@
     "transform"
   ],
   "author": "jiangzhiguo2010",
-  "license": "ISC",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/jsany/date/issues"
   },
   "homepage": "https://github.com/jsany/date",
   "devDependencies": {
-    "babel": "^6.23.0",
-    "babel-preset-env": "^1.7.0",
-    "babel-register": "^6.26.0",
+    "@babel/cli": "^7.5.5",
+    "@babel/core": "^7.5.5",
+    "@babel/preset-env": "^7.5.5",
+    "@babel/register": "^7.5.5",
     "mocha": "^6.2.0",
     "eslint": "^5.16.0",
     "eslint-config-prettier": "^4.3.0",
