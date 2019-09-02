@@ -1,5 +1,7 @@
 <h1 align="center">Welcome to @jsany/date 👋</h1>
 <p>
+  <img alt="npm bundle size (scoped)" src="https://img.shields.io/bundlephobia/min/@jsany/date">
+  <img alt="GitHub code size in bytes" src="https://img.shields.io/github/languages/code-size/jsany/date">
   <img alt="Version" src="https://img.shields.io/npm/v/@jsany/date.svg">
   <a href="https://github.com/jsany/date">
     <img alt="Documentation" src="https://img.shields.io/badge/documentation-yes-brightgreen.svg" target="_blank" />
@@ -12,7 +14,7 @@
   </a>
 </p>
 
-> javascript date small
+> javascript date small es5 es6+
 
 ### 🏠 [Homepage](https://github.com/jsany/date)
 
@@ -27,6 +29,8 @@ npm install --save-dev @jsany/date
 ```javascript
 import { dateFormat, UTCTimestamp, UTC2Target, Target2UTC } from '@jsany/date';
 
+// or const { dateFormat, UTCTimestamp, UTC2Target, Target2UTC } = require('@jsany/date');
+
 const dateStr = '2019-01-02 14:08:59';
 const bj = '2019-01-01 08:00:00';
 const ist = '2019-01-01 05:30:00';
@@ -34,7 +38,7 @@ const utc = '2019-01-01 00:00:00';
 const utc_unix = 1546300800000;
 
 /**
- * @description 格式化日期
+ * @description dateFormat：格式化日期
  * @param {(object|string)} date - 日期对象/字符串
  * @param {string} mask - 日期格式,默认：mask='yyyy-MM-dd HH:mm:ss'
  * @returns {string} 返回格式化后的日期
@@ -64,16 +68,19 @@ dateFormat(dateStr, 'TT'); // "PM"
 dateFormat(dateStr, 'Z'); // "GMT"
 dateFormat(dateStr, 'yyyy/MM/dd HH:mm:ss'); // "2019/01/02 14:08:59"
 
+=============================================
+
 /**
- * @description 获取utc时间戳
+ * @description UTCTimestamp：获取utc时间戳
  * @param {string} date - utc日期对象/字符串，默认：当前时间
  * @returns {number} 返回utc时间戳
  */
-
 console.log(UTCTimestamp(utc), utc_unix);
 
+=============================================
+
 /**
- * @description utc时间转目标时区的时间，默认为utc时间转本地时间
+ * @description UTC2Target：utc时间转目标时区的时间，默认为utc时间转本地时间
  * @param {object|string} date - utc时间，日期对象/字符串
  * @param {number} timezone - 目标时区，默认：本地时区timezone=-480（中国时区+0800）
  * @param {*} mask - 日期格式,默认：mask='yyyy-MM-dd HH:mm:ss'
@@ -84,8 +91,10 @@ UTC2Target(utc, -480); // "2019-01-01 08:00:00"
 // utc转印度时间（-330）
 UTC2Target(utc, -330); // "2019-01-01 05:30:00"
 
+=============================================
+
 /**
- * @description 目标时区的时间转utc时间，默认为本地时间转utc时间
+ * @description Target2UTC：目标时区的时间转utc时间，默认为本地时间转utc时间
  * @param {object|string} date - 目标时区时间，日期对象/字符串
  * @param {number} timezone - 目标时区，默认：本地时区timezone=-480（中国时区+0800）
  * @param {*} mask - 日期格式,默认：mask='yyyy-MM-dd HH:mm:ss'
@@ -102,6 +111,10 @@ Target2UTC(ist, -330); // "2019-01-01 00:00:00"
 ```sh
 npm run test
 ```
+
+## 👀 View online
+
+[view](https://npm.runkit.com/@jsany/date)
 
 ## Author
 

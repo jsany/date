@@ -1,9 +1,13 @@
 {
   "name": "@jsany/date",
-  "version": "1.0.4",
-  "description": "javascript date small",
+  "version": "1.0.5",
+  "description": "javascript date small es5 es6+",
   "main": "lib/index.js",
   "module": "es/index.js",
+  "files": [
+    "lib",
+    "es"
+  ],
   "scripts": {
     "test": "mocha --require @babel/register",
     "compile": "babel es --out-dir lib"
