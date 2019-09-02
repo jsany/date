@@ -1,6 +1,6 @@
 {
   "name": "@jsany/date",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "javascript date small",
   "main": "lib/index.js",
   "module": "es/index.js",

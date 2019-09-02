@@ -1,5 +1,5 @@
-import {MyError} from '../helper/index';
-import ErrorCode from '../helper/errCode';
+import { MyError } from './helper/index';
+import ErrorCode from './helper/errCode';
 import dateFormat from './dateFormat';
 
 /**
@@ -16,7 +16,7 @@ const Target2UTC = (
 ) => {
   let targetTimestamp = new Date(date).getTime();
   if (!targetTimestamp) {
-    throw new MyError({code: '000',msg: ErrorCode['000']})
+    throw new MyError({ code: '000', msg: ErrorCode['000'] });
   }
   date = dateFormat(new Date(targetTimestamp + timezone * 60 * 1000), mask);
   return date;

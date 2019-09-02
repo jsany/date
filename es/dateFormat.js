@@ -1,5 +1,5 @@
-import {MyError} from '../helper/index';
-import ErrorCode from '../helper/errCode';
+import { MyError } from './helper/index';
+import ErrorCode from './helper/errCode';
 
 /**
  * @description 格式化日期
@@ -10,7 +10,7 @@ import ErrorCode from '../helper/errCode';
 const dateFormat = (date, mask = 'yyyy-MM-dd HH:mm:ss') => {
   const d = typeof date !== 'object' ? new Date(date) : date;
   if (!d.getTime()) {
-    throw new MyError({code: '000',msg: ErrorCode['000']})
+    throw new MyError({ code: '000', msg: ErrorCode['000'] });
   }
   const zeroize = (value, length = 2) => {
     value = String(value);
